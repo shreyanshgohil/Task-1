@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Add Checker Task -->
+    <section class="cta cta__value--checker container">
+      <h1 class="main__heading">Add Checker</h1>
+      <div class="input__user--box">
+        <div class="text__box--box">
+          <label class="label__site" for="val1">Value 1</label>
+          <input class="site__input input1" type="text" id="val1" />
+        </div>
+        <div class="text__box--box">
+          <label class="label__site" for="val2">Value 2</label>
+          <input class="site__input input2" type="text" id="val2" />
+        </div>
+        <div class="buttons">
+          <button class="btn btn--add">ADD</button>
+        </div>
+        <p class="message"></p>
+      </div>
+    </section>
+
+    <!-- Duplicate Task -->
+    <section class="cta container">
+      <h1 class="main__heading">Non-Duplicate Checker</h1>
+      <div class="input__user--box">
+        <div class="text__box--box">
+          <label class="label__site" for="val1">Enter elements</label>
+          <input class="site__input input--duplicate" type="text" id="val1" />
+        </div>
+        <div class="buttons">
+          <button class="btn btn__add--duplicate">Add Value</button>
+          <button class="btn btn__remove--duplicate">
+            Remove Non Duplicate
+          </button>
+        </div>
+        <p class="text__display value__list--remove"></p>
+      </div>
+    </section>
+
+    <!-- January Task -->
+    <section class="cta container">
+      <h1 class="main__heading">January Task</h1>
+      <div class="buttons">
+        <button class="btn btn__january--task">No of January</button>
+      </div>
+      <p class="text__display message--january"></p>
+    </section>
+
+    <!-- Christmas Task -->
+    <section class="cta container">
+      <h1 class="main__heading">Christmas Task</h1>
+      <div class="buttons">
+        <button class="btn btn__Christmas">Days remains</button>
+      </div>
+      <p class="text__display message--Christmas"></p>
+    </section>
+
+    <!-- Total appearance task -->
+    <section class="cta container">
+      <h1 class="main__heading">Total appearance task</h1>
+      <div class="input__user--box">
+        <div class="text__box--box">
+          <label class="label__site" for="val1">Number range</label>
+          <input class="site__input input--range" type="text" id="val1" />
+        </div>
+        <div class="text__box--box">
+          <label class="label__site" for="val1">Find Number</label>
+          <input class="site__input input--find" type="text" id="val1" />
+        </div>
+        <div class="buttons">
+          <button class="btn btn__enter--find">Find</button>
+        </div>
+        <p class="text__display add--find"></p>
+      </div>
+    </section>
+
+    <!-- Sort task -->
+    <section class="cta container">
+      <h1 class="main__heading">Sorting Task</h1>
+      <div class="input__user--box">
+        <div class="text__box--box">
+          <label class="label__site" for="val1">Enter elements</label>
+          <input class="site__input input--sort" type="text" id="val1" />
+        </div>
+        <div class="buttons">
+          <button class="btn btn__add--sort--add">Add Value</button>
+          <button class="btn btn__add--sort">Sort Value</button>
+        </div>
+        <p class="text__display sort--value"></p>
+      </div>
+    </section>
+
+    <!-- Sum of index task -->
+    <section class="cta container">
+      <h1 class="main__heading">Sum of index Task</h1>
+      <div class="input__user--box">
+        <div class="text__box--box">
+          <label class="label__site" for="val1">Enter Values</label>
+          <input class="site__input input--index--add" type="text" id="val1" />
+        </div>
+        <div class="buttons">
+          <button class="btn btn__enter--index">Enter Values</button>
+          <button class="btn btn__add--index">Add index</button>
+        </div>
+        <p class="text__display add--index"></p>
+      </div>
+    </section>
+
+    <!-- prefix  Task -->
+    <section class="cta container">
+      <h1 class="main__heading">Prefix sum Task</h1>
+      <div class="input__user--box">
+        <div class="text__box--box">
+          <label class="label__site" for="val1">Enter Values</label>
+          <input class="site__input input--values--add" type="text" id="val1" />
+        </div>
+        <div class="buttons">
+          <button class="btn btn__enter--values">Enter Values</button>
+          <button class="btn btn__add--values">Add values</button>
+        </div>
+        <p class="text__display add--value"></p>
+      </div>
+    </section>
+
+    <!-- String Task -->
+    <section class="cta container">
+      <h1 class="main__heading">String Task</h1>
+      <div class="input__user--box">
+        <div class="text__box--box">
+          <label class="label__site" for="val1">Enter String</label>
+          <input class="site__input input--string" type="text" id="val1" />
+        </div>
+        <div class="buttons">
+          <button class="btn btn__add--string">Add String</button>
+          <button class="btn btn__change--string">Change string</button>
+        </div>
+        <p class="text__display string--value"></p>
+      </div>
+    </section>
+
+    <!-------------------------------------------------------------   Calculator  ---------------------------------------------------------------->
+
+    <!-- <section class="calculator calculator--container">
+      <div class="grid__calculator">
+        
+        <div class="col col1">
+          <p type="text" class="screen--input">0</p>
+        </div>
+            <div class="col">
+          <button class="button--text dark--violet" data-operation="ac" ">
+            <span>AC</span>
+          </button>
+        </div>
+        <div class="col">
+          <button class="button--text dark--violet" data-operation="+/-" -">
+            <span>+/-</span>
+          </button>
+        </div>
+        <div class="col">
+          <button class="button--text dark--violet" data-operation="%" >
+            <span>%</span>
+          </button>
+        </div>
+        <div class="col">
+          <button class="button--text light--yellow" data-operation="/" >
+            <span>÷</span>
+          </button>
+        </div>
+               <div class="col">
+          <button class="button--text" data-number="7" ><span>7</span></button>
+        </div>
+        <div class="col">
+          <button class="button--text" data-number="8" ><span>8</span></button>
+        </div>
+        <div class="col">
+          <button class="button--text" data-number="9" ><span>9</span></button>
+        </div>
+        <div class="col">
+          <button class="button--text light--yellow" data-operation="*" >
+            <span>*</span>
+          </button>
+        </div>
+        
+        <div class="col">
+          <button class="button--text" data-number="4" ><span>4</span></button>
+        </div>
+        <div class="col">
+          <button class="button--text" data-number="5" ><span>5</span></button>
+        </div>
+        <div class="col">
+          <button class="button--text" data-number="6" ><span>6</span></button>
+        </div>
+        <div class="col">
+          <button class="button--text light--yellow" data-operation="-" >
+            <span>-</span>
+          </button>
+        </div>
+        
+        <div class="col">
+          <button class="button--text" data-number="1" ><span>1</span></button>
+        </div>
+        <div class="col">
+          <button class="button--text" data-number="2" ><span>2</span></button>
+        </div>
+        <div class="col">
+          <button class="button--text" data-number="3" >
+            <span>3</span>
+          </button>
+        </div>
+        <div class="col">
+          <button class="button--text light--yellow" data-operation="/" >
+            <span>+</span>
+          </button>
+        </div>
+        
+        <div class="col btn--plus">
+          <button class="button--text" data-number="0" ><span>0</span></button>
+        </div>
+
+        <div class="col">
+          <button class="button--text" ><span>.</span></button>
+        </div>
+        <div class="col">
+          <button class="button--text light--yellow" data-operation="=" >
+            <span>=</span>
+          </button>
+        </div>
+      </div>
+    </section>
+ -->
+
+    <div class="calculator-grid">
+      <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+      <button data-all-clear class="span-two">AC</button>
+      <button data-delete>DEL</button>
+      <button data-operation>÷</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>*</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>+</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>-</button>
+      <button data-number>.</button>
+      <button data-number>0</button>
+      <button data-equals class="span-two">=</button>
+    </div>
+    <script src="index.js"></script>
+    <script src="demo.js"></script>
+  </body>
+</html>
